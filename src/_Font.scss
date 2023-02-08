@@ -1,0 +1,55 @@
+@import './Variables';
+
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+.font-logo-red {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight:900;
+  font-size: xx-large;
+  color: $red;
+}
+
+.font-logo-black {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: xx-large;
+}
+
+.font-bold {
+  font-family: "Inter var";
+  font-style: normal;
+  font-weight: bold;
+}
+
+.font-medium {
+  font-family: "Inter var";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.font-light {
+  font-family: "Inter var";
+  font-style: normal;
+  font-weight: lighter;
+}
+
+.font-blue-category {
+  font-family: "Inter var";
+  font-style: normal;
+  font-weight: bold;
+  color: $blue;
+  font-size: 10px;
+  padding-left: 12px;
+}
+
+.font-author {
+  font-family: "Inter var";
+  font-weight: normal;
+  font-size: 12px;
+}

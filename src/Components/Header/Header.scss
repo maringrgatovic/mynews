@@ -1,0 +1,31 @@
+@import "../../Font";
+@import "../../Display";
+
+.header-container {
+    background: linear-gradient(to right, rgb(187, 30, 30), rgb(178, 25, 25));
+    color: white;
+    justify-content: space-around;
+
+    @media (max-width: 800px) {
+        display: none;
+    }
+
+    .message {
+        p {
+            padding: 0 1.5em;
+        }
+    }
+
+    .get-choice {
+        button {
+            margin-right: 2em;
+            border-radius: 8px;
+            border: none;
+            height: 2.7em;
+            width: 5em;
+        }
+        :hover {
+            cursor: pointer; 
+        }
+    }
+}

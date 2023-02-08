@@ -1,0 +1,10 @@
+.exit-icon {
+  font-size: 1.5em;
+  margin-right: 5px;
+}
+
+@media (min-width: 800px) {
+  .exit-icon {
+    display: none;
+  }
+}/*# sourceMappingURL=MobileMenuExit.css.map */

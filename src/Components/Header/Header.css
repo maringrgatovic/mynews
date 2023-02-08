@@ -1,0 +1,95 @@
+:root {
+  font-family: "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Inter var", sans-serif;
+  }
+}
+.font-logo-red {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: xx-large;
+  color: #BB1E1E;
+}
+
+.font-logo-black {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: xx-large;
+}
+
+.font-bold {
+  font-family: "Inter var";
+  font-style: normal;
+  font-weight: bold;
+}
+
+.font-medium {
+  font-family: "Inter var";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.font-light {
+  font-family: "Inter var";
+  font-style: normal;
+  font-weight: lighter;
+}
+
+.font-blue-category {
+  font-family: "Inter var";
+  font-style: normal;
+  font-weight: bold;
+  color: #1E71BB;
+  font-size: 10px;
+  padding-left: 12px;
+}
+
+.font-author {
+  font-family: "Inter var";
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.flexRowCenter {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flexColumnCenter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-container {
+  background: linear-gradient(to right, rgb(187, 30, 30), rgb(178, 25, 25));
+  color: white;
+  justify-content: space-around;
+}
+@media (max-width: 800px) {
+  .header-container {
+    display: none;
+  }
+}
+.header-container .message p {
+  padding: 0 1.5em;
+}
+.header-container .get-choice button {
+  margin-right: 2em;
+  border-radius: 8px;
+  border: none;
+  height: 2.7em;
+  width: 5em;
+}
+.header-container .get-choice :hover {
+  cursor: pointer;
+}/*# sourceMappingURL=Header.css.map */

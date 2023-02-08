@@ -1,0 +1,15 @@
+.cube {
+  justify-self: center;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, auto);
+}
+
+.special {
+  grid-area: 1/3/3/4;
+  background-color: red;
+  height: 152px;
+}/*# sourceMappingURL=Proba.css.map */

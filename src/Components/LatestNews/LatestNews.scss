@@ -1,0 +1,32 @@
+@import '../../Variables';
+
+.latest-news-container {
+    margin: 15px;
+    width: 321px;
+    height: 534px;
+    background-color: white;
+    border-radius: 8px;
+    grid-row: span 2;
+
+    .title-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 19px 0 15px 15px;
+        height: 30px;
+        p {
+            margin: 0;
+            padding-left: 10px;
+        }
+        border-bottom: 2px solid rgba(128, 128, 128, 0.391);
+    }
+}
+
+@media (max-width: 800px) {
+    .latest-news-container {
+        margin: auto;
+        margin-top: 1em;
+        font-size: large;
+    }
+}

@@ -1,0 +1,138 @@
+:root {
+  font-family: "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Inter var", sans-serif;
+  }
+}
+.font-logo-red {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: xx-large;
+  color: #BB1E1E;
+}
+
+.font-logo-black {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: xx-large;
+}
+
+.font-bold {
+  font-family: "Inter var";
+  font-style: normal;
+  font-weight: bold;
+}
+
+.font-medium {
+  font-family: "Inter var";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.font-light {
+  font-family: "Inter var";
+  font-style: normal;
+  font-weight: lighter;
+}
+
+.font-blue-category {
+  font-family: "Inter var";
+  font-style: normal;
+  font-weight: bold;
+  color: #1E71BB;
+  font-size: 10px;
+  padding-left: 12px;
+}
+
+.font-author {
+  font-family: "Inter var";
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.news-box {
+  margin: 15px;
+  height: 252px;
+  width: 321px;
+  position: relative;
+  transition: transform 0.6s;
+}
+.news-box img {
+  height: 212px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+.news-box .news-box-text-container {
+  border-radius: 0 0 8px 8px;
+  height: 112px;
+  width: 100%;
+  top: 140px;
+  background-color: white;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.news-box .news-box-text-container .news-category {
+  padding-left: 12px;
+  padding-top: 12px;
+  margin: 0;
+}
+.news-box .news-box-text-container .news-title {
+  padding-left: 12px;
+  padding-top: 5px;
+  margin: 0;
+}
+.news-box .news-box-text-container .news-author {
+  padding-left: 12px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+.news-box .star-icon {
+  position: absolute;
+  z-index: 10;
+  bottom: 10px;
+  right: 10px;
+  transition-duration: 0.8s, 0.6s;
+  transition-property: transform, color;
+}
+.news-box .clicked {
+  color: black;
+}
+
+@media (min-width: 800px) {
+  .news-box:hover {
+    transform: scale(1.1);
+  }
+  .news-box:hover .not-clicked {
+    color: rgba(128, 128, 128, 0.612);
+  }
+  .news-box:hover .star-icon:hover {
+    transform: scale(1.5);
+    color: black;
+  }
+  .star-icon {
+    color: white;
+    font-size: x-large;
+  }
+}
+@media (max-width: 800px) {
+  .news-box {
+    align-self: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+  }
+  .star-icon {
+    color: black;
+    font-size: xx-large;
+  }
+}/*# sourceMappingURL=NewsBox.css.map */

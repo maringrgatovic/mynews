@@ -1,0 +1,62 @@
+@import '../../Variables';
+
+.search-container {
+    margin-left: 4em;
+    padding: 0.2em;
+    background-color: white;
+    border-radius: 8px;
+    height: 3.3em;
+    width: 50vw;
+    justify-content:space-between;
+    .search-icon {
+        padding-left: 1em;
+        padding-right: 1em;
+        opacity: 0.4;
+    }
+    input{
+        border: none;
+        height: 3em;
+        width: 100%;
+    }
+    ::placeholder {
+        color:grey;
+    }
+    input:hover {
+        cursor: text;
+    }
+    button {
+        margin: 0em 0.3em;
+        border-radius: 8px;
+        border: none;
+        height: 90%;
+        width: 10em;
+        color: white;
+        background-color:  $red;
+        font-size: 15px;
+    }
+    :hover {
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 800px) {
+    .search-container {
+        margin-left: 14px;
+        margin-right: 14px;
+        margin-top: 20px;
+        width: 90vw;
+        align-self: center;
+        height: 3em;
+        .search-icon {
+            font-size: 1.5em;
+            padding: 0.7em;
+        }
+        ::placeholder {
+            font-size: 1.3em;
+            color: rgba(128, 128, 128, 0.781);
+        }
+    }
+    .search-button {
+        display: none;
+    }
+}

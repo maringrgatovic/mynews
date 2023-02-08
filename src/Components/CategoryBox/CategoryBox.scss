@@ -1,0 +1,57 @@
+@import '../../Variables';
+
+.category-box {
+    background-color: $lightgray;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 5px;
+    color: #7A7B7C;
+    font-size: 19px;
+    .category-name {
+        margin: 0;
+        font-family: "Inter var";
+        font-size: 12px;
+        padding-top: 0.4em;
+    }
+}
+
+.category-box:hover {
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+.category-box-active {
+    background-color: $red;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 19px;
+    .category-name {
+        margin: 0;
+        font-family: "Inter var";
+        font-size: 12px;
+        padding-top: 0.4em;
+    }
+}
+
+@media (max-width: 800px) {
+    .category-box {
+        width: 95px;
+        height: 95px;
+        margin: 8px;
+        font-size: 30px;
+        color: #8d8d8c;
+    }
+    .category-box-active {
+        width: 95px;
+        height: 95px;
+        margin: 8px;
+        font-size: 30px;
+        background-color: white;
+        color: $red;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}

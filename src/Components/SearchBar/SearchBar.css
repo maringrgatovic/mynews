@@ -1,0 +1,74 @@
+.search-container {
+  margin-left: 4em;
+  padding: 0.2em;
+  background-color: white;
+  border-radius: 8px;
+  height: 3.3em;
+  width: 50vw;
+  justify-content: space-between;
+}
+.search-container .search-icon {
+  padding-left: 1em;
+  padding-right: 1em;
+  opacity: 0.4;
+}
+.search-container input {
+  border: none;
+  height: 3em;
+  width: 100%;
+}
+.search-container ::-moz-placeholder {
+  color: grey;
+}
+.search-container :-ms-input-placeholder {
+  color: grey;
+}
+.search-container ::placeholder {
+  color: grey;
+}
+.search-container input:hover {
+  cursor: text;
+}
+.search-container button {
+  margin: 0em 0.3em;
+  border-radius: 8px;
+  border: none;
+  height: 90%;
+  width: 10em;
+  color: white;
+  background-color: #BB1E1E;
+  font-size: 15px;
+}
+.search-container :hover {
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .search-container {
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-top: 20px;
+    width: 90vw;
+    align-self: center;
+    height: 3em;
+  }
+  .search-container .search-icon {
+    font-size: 1.5em;
+    padding: 0.7em;
+  }
+  .search-container ::-moz-placeholder {
+    font-size: 1.3em;
+    color: rgba(128, 128, 128, 0.781);
+  }
+  .search-container :-ms-input-placeholder {
+    font-size: 1.3em;
+    color: rgba(128, 128, 128, 0.781);
+  }
+  .search-container ::placeholder {
+    font-size: 1.3em;
+    color: rgba(128, 128, 128, 0.781);
+  }
+  .search-button {
+    display: none;
+  }
+}/*# sourceMappingURL=SearchBar.css.map */
