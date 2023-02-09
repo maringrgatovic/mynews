@@ -36,8 +36,8 @@ class News extends Component {
             if(this.props.category === 'Favorites') {
                 this.setState({articles: this.props.favoriteArticles});
             } else {
-                let url = 'https://newsapi.org/v2/top-headlines?' +
-                          'country=us&' + `category=${this.props.category.toLowerCase()}&` + 
+                let url = 'https://newsapi.org/v2/top-headlines?country=us&'
+                          + `category=${this.props.category.toLowerCase()}&` + 
                           'apiKey=a57737f574ff4d239889b79be03c3570';
                 fetch(url)
                     .then(response => response.json())
@@ -99,7 +99,9 @@ class News extends Component {
                                             toggleFavoriteArticle={this.props.toggleFavoriteArticle}
                                             favoriteArticlesTitles={this.props.favoriteArticlesTitles}/>
                                         );
-                        }})
+                        }
+                    return '';
+                    })
                 :
                     this.state.articles.map((article, index) => {
                         //extracting the right category if it exists
@@ -135,6 +137,7 @@ class News extends Component {
                                         favoriteArticlesTitles={this.props.favoriteArticlesTitles}/>
                             );
                         }
+                        return '';
                     })}
             </div>
         );

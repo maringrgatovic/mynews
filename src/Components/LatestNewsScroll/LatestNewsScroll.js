@@ -21,8 +21,8 @@ class LatestNewsScroll extends Component {
             this.setState({hasMore: false});
             return;
         }
-        let url = 'https://newsapi.org/v2/top-headlines?language=en' + 
-                  '&pageSize=10' + `&page=${this.state.page}` +
+        let url = 'https://newsapi.org/v2/top-headlines?language=en&pageSize=10'
+                   + `&page=${this.state.page}` +
                   '&apiKey=a57737f574ff4d239889b79be03c3570';
 
         fetch(url)

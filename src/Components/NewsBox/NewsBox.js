@@ -33,7 +33,7 @@ class NewsBox extends Component {
                     <img 
                         src={imageUrl !== null ? imageUrl : 
                             'https://st2.depositphotos.com/3223379/5688/i/600/depositphotos_56880259-stock-photo-words-news.jpg'}
-                        alt='Image Not Found'></img>
+                        alt='Not Found'></img>
                     <div className='news-box-text-container'>
                         <div>
                             <p className='font-blue-category news-category'>

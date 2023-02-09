@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import './MobileButtons.css';
 
 const MobileButtons = ({ mobileButton, toggleMobileButton}) => {
