@@ -8,17 +8,16 @@ The wep page is very intuitive and simple to use.<br><br>
 * *Search bar* <br>
 A search filter for the article list by title or part of a title.
 
-* *Categories*
+* *Categories*<br>
 Each category is clickable and leads to a new set of articles by the chosen category.
 
-* *Articles*
+* *Articles*<br>
 The main thing on the page is a list of articles, each one clickable and leads to that specific  article on another page.
 
-* *Latest News widget*
+* *Latest News widget*<br>
 Shows recent news and implements infinite scroll functionality
 
 ![image](https://user-images.githubusercontent.com/56473997/217776525-af0d7048-3271-425c-a2a8-b6ae8aadfa5d.png)
-
 
 ## Bookmark approach
 To bookmark an article you should hover over it and a star should appear in the bottom right corner. If you click on it the star should be marked on that article and the marked article should now appear under the 'Favorites' category. If you go to the favorites article without marking any article beforehand there should be instructions on how to mark an article as a favorite.<br>
